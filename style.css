@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 25px;
+  }
+
+  main {
+    display:block;
+    /* was a fixed height of 175px; the taller dashboard needs room, so let it grow */
+    overflow:auto;
+  }
+
+  header {
+    border-bottom: 1px solid black;
+  }
+
+  h1 {
+    font-weight: bold;
+    color: #000;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  p {
+    max-width: 600px;
+  }
+
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  footer {
+    padding-top: 25px;
+    border-top: 1px solid black;
+  }
+
+  footer a {
+    float:left;
+    margin:5px;
+  }
+
+  .pet-image {
+    height:250px;
+  }
+
+  .dashboard div {
+    display:block;
+  }
+
+  .pet-image-container {
+    float:left;
+    padding:10px;
+  }
+
+  .dashboard {
+    float:left;
+    padding:20px;
+  }
+
+  .button-container {
+    margin-top:20px;
+  }
+
+  .button-container button {
+    width: 100px;
+      margin-right: 10px;
+      text-align: center;
+      display: inline-block;
+      float: left;
+    font-size:15px;
+    background-color: #1e2835;
+    border-color: #404853;
+    cursor:pointer;
+    background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
+    color: #fafafa;
+  }
+
+  /* ---------- Notification box (pet comments) ---------- */
+  .pet-message {
+    width: 440px;
+    max-width: 100%;
+    min-height: 44px;
+    margin-top: 14px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: #eceff3;
+  }
+
+  /* Mood colors: one of these is added after each button press */
+  .pet-message.good   { background-color: #ddf5e1; }
+  .pet-message.bad    { background-color: #fde3e3; }
+  .pet-message.sleepy { background-color: #e1e6fb; }
+
+  /* ---------- Pet animations (classes are added/removed with jQuery) ---------- */
+  .bounce { animation: bounce 0.5s; }
+  .shake  { animation: shake 0.4s; }
+  .snooze { animation: snooze 1s; }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    40%      { transform: translateY(-25px); }
+    70%      { transform: translateY(0); }
+    85%      { transform: translateY(-8px); }
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-10px); }
+    40%, 80% { transform: translateX(10px); }
+  }
+
+  @keyframes snooze {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50%      { transform: scale(0.92); opacity: 0.6; }
+  }

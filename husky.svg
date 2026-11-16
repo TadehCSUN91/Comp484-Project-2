@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- pointed upright ears -->
+  <polygon points="28,18 82,50 34,98" fill="#59616d"/>
+  <polygon points="172,18 118,50 166,98" fill="#59616d"/>
+  <polygon points="40,40 68,56 42,80" fill="#f4b6c2"/>
+  <polygon points="160,40 132,56 158,80" fill="#f4b6c2"/>
+  <!-- head (grey fur) -->
+  <ellipse cx="100" cy="108" rx="70" ry="64" fill="#7b8491"/>
+  <!-- dark cap on top of head -->
+  <path d="M42 92 Q50 42 100 40 Q150 42 158 92 Q130 76 100 80 Q70 76 42 92 Z" fill="#59616d"/>
+  <!-- white face mask: forehead blaze plus muzzle and cheeks -->
+  <path d="M100 52 L84 100 L72 132 Q70 170 100 172 Q130 170 128 132 L116 100 Z" fill="#ffffff"/>
+  <ellipse cx="62" cy="130" rx="26" ry="30" fill="#ffffff"/>
+  <ellipse cx="138" cy="130" rx="26" ry="30" fill="#ffffff"/>
+  <!-- eyebrow spots -->
+  <ellipse cx="72" cy="78" rx="8" ry="5" fill="#ffffff"/>
+  <ellipse cx="128" cy="78" rx="8" ry="5" fill="#ffffff"/>
+  <!-- ice-blue eyes -->
+  <ellipse cx="72" cy="98" rx="11" ry="12" fill="#8fd3f4"/>
+  <ellipse cx="128" cy="98" rx="11" ry="12" fill="#8fd3f4"/>
+  <circle cx="72" cy="99" r="6" fill="#1b2330"/>
+  <circle cx="128" cy="99" r="6" fill="#1b2330"/>
+  <circle cx="75" cy="95" r="3" fill="#ffffff"/>
+  <circle cx="131" cy="95" r="3" fill="#ffffff"/>
+  <!-- nose and mouth -->
+  <ellipse cx="100" cy="124" rx="12" ry="8" fill="#1b2330"/>
+  <ellipse cx="96" cy="121" rx="4" ry="2" fill="#6b7686"/>
+  <path d="M100 132 L100 140 M100 140 Q88 150 78 140 M100 140 Q112 150 122 140" stroke="#1b2330" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- tongue -->
+  <path d="M92 144 Q100 168 108 144 Z" fill="#ff7a93"/>
+</svg>
